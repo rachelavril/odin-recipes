@@ -1,0 +1,14 @@
+/* Cards */
+.recipe-card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
