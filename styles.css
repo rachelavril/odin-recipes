@@ -1,5 +1,31 @@
+/* Summer theme color palette
+sky blue
+blue green
+prussian blue
+selective yellow
+UT orange
+
+
+:root {
+    --primary-color: skyblue;
+    --background-color: white;
+    --card-background: selectiveyellow;
+    --text-color: black;
+    --border-color: transparent;
+}
+*/
+
+/* Recipe gallery layout */
+.recipe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* Cards */
 .recipe-card {
+    background-color: var(--card-background);
     max-width: 300px;
     margin: 0 auto;
     padding: 16px;
@@ -9,6 +35,7 @@
 
 .recipe-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     display: block;
 }
