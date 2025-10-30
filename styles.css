@@ -1,18 +1,12 @@
-/* =================
-MCM Dark Retro Color Palette
-==================== */
 :root {
-    --primary-color: #2E5D5D;      /* deep teal for header/footer */
-    --background-color: #1C1C1C;   /* very dark gray/black for page */
-    --card-background: #4C3A2D;    /* rich brown for cards */
-    --text-color: #E0D8C3;         /* soft cream text */
-    --accent-color: #D9822B;       /* burnt orange highlights */
+    --primary-color: #2E5D5D;
+    --background-color: #1C1C1C;
+    --card-background: #4C3A2D;
+    --text-color: #E0D8C3;
+    --accent-color: #D9822B;
     --border-color: transparent;
 }
 
-/* =================
-Global Styles
-==================== */
 html, body {
     height: 100%;
     margin: 0;
@@ -23,7 +17,7 @@ body {
     flex-direction: column;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -37,18 +31,15 @@ a:hover {
     text-decoration: underline;
 }
 
-/* =================
-Typography
-==================== */
 h1 {
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
     margin-bottom: 0;
-    font-family: 'Courier New', monospace; /* retro vibe */
 }
 
 h2 {
-    font-family: 'Georgia', serif; /* MCM retro style */
-    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 
@@ -56,35 +47,35 @@ p {
     line-height: 1.5;
 }
 
-/* =================
-Header
-==================== */
 header {
     text-align: center;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, #2E5D5D, #1F4242);
     color: var(--text-color);
-    padding: 1rem;
-    font-family: 'Courier New', monospace;
+    padding: 2rem 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
-/* =================
-Main Layout
-==================== */
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
 
 .recipe-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
 }
 
-/* =================
-Cards
-==================== */
 .recipe-card {
     background-color: var(--card-background);
     max-width: 300px;
@@ -111,14 +102,11 @@ Cards
     border-radius: 4px;
 }
 
-/* =================
-Footer
-==================== */
 footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     background-color: var(--primary-color);
     color: var(--text-color);
-    font-family: 'Courier New', monospace;
+    font-family: 'Raleway', sans-serif;
 }
