@@ -4,26 +4,62 @@ blue green
 prussian blue
 selective yellow
 UT orange
+*/
 
-
+/* =================
+Root Variables
+==================== */
 :root {
     --primary-color: skyblue;
     --background-color: white;
-    --card-background: selectiveyellow;
+    --card-background: #ffcc33;
     --text-color: black;
     --border-color: transparent;
 }
-*/
 
-/* Recipe gallery layout */
+/* ================
+Global Styles
+==================== */
+body {
+   background-color: var(--background-color);
+   color: var(--text-color);
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* ================
+Header
+==================== */
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+/* ================
+Main Layout
+==================== */
 .recipe-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
-
-/* Cards */
+/* ================
+Cards
+==================== */
 .recipe-card {
     background-color: var(--card-background);
     max-width: 300px;
@@ -31,6 +67,7 @@ UT orange
     padding: 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-align: center;
 }
 
 .recipe-card img {
@@ -38,4 +75,12 @@ UT orange
     height: 200px;
     object-fit: cover;
     display: block;
+}
+/* ================
+Footer
+==================== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
